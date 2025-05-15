@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Complaints</title>
+</head>
+<body>
+    <h1>Submitted Complaints</h1>
+    <ul>
+        {% for complaint in complaints %}
+            <li><strong>{{ complaint.name }}:</strong> {{ complaint.issue }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Submit another</a>
+</body>
+</html>
